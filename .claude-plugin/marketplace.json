@@ -1,0 +1,21 @@
+{
+  "name": "exmergo-skills",
+  "owner": {
+    "name": "Exmergo, Inc.",
+    "email": "support@exmergo.com",
+    "url": "https://www.exmergo.com"
+  },
+  "metadata": {
+    "description": "Open skills for Claude Code from Exmergo, the team building AI agents for data analytics. Part of our open research at exmergo.com/open-research."
+  },
+  "plugins": [
+    {
+      "name": "no-em-dashes",
+      "source": {
+        "source": "github",
+        "repo": "exmergo/skill-no-em-dashes"
+      },
+      "description": "Produces em-dash-free prose and avoids the sentence shapes that invite an em dash. Triggers automatically whenever Claude writes or edits prose."
+    }
+  ]
+}

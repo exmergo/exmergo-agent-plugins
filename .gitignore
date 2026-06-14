@@ -1,0 +1,10 @@
+# Editor and IDE config
+.idea/
+.vscode/
+*.iml
+*.swp
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
