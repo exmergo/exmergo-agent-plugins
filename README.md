@@ -1,7 +1,9 @@
 # Exmergo Skills
 
-Open [Claude Code](https://code.claude.com/docs/en/plugins) skills from
-[Exmergo](https://www.exmergo.com), the team building AI agents for data analytics.
+Open skills for AI coding agents from [Exmergo](https://www.exmergo.com), the team
+building AI agents for data analytics. They install into
+[Claude Code](https://code.claude.com/docs/en/plugins) through this marketplace, and
+they also work in other coding agents (see [Beyond Claude Code](#beyond-claude-code)).
 
 This repository is a Claude Code plugin marketplace. Add it once, then install any
 skill in the catalog. It is part of the work we share at
@@ -37,6 +39,16 @@ Each skill lives in its own repository, with its own README, examples, and issue
 catalog only points at them, so one marketplace gives you everything Exmergo ships.
 Skill repositories are named with a `skill-` prefix so they group together in our
 GitHub organization, separate from our open-research experiments and other tools.
+
+## Beyond Claude Code
+
+The `/plugin` commands above are specific to Claude Code, which is what this
+marketplace plugs into. The skills themselves are not Claude-only: each one ships an
+`AGENTS.md` (the cross-tool standard read by Cursor, GitHub Copilot, Codex, Windsurf,
+and others) along with native rule files for the major agents. To use a skill outside
+Claude Code, open its repository and follow the "Use with other coding agents" section
+there. For example, see
+[exmergo/skill-no-em-dashes](https://github.com/exmergo/skill-no-em-dashes#use-with-other-coding-agents).
 
 ## Maintaining the catalog
 
