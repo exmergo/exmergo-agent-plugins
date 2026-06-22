@@ -1,6 +1,10 @@
 # Maintaining the catalog
 
-This repo is a Claude Code marketplace named `exmergo-skills`. It holds no skill code
+This repo (`exmergo/exmergo-agent-plugins`) is a Claude Code marketplace named `exmergo`.
+The repo name and the marketplace name differ on purpose: the marketplace identifier (the
+`name` in `marketplace.json`) is the clean `exmergo` that users type after `@`, while the
+repo name (`exmergo-agent-plugins`) describes what it holds, namely plugins for AI coding
+agents. It holds no skill code
 of its own. It is a catalog: `.claude-plugin/marketplace.json` lists each skill and
 points at the skill's own repository via a `github` source. The marketplace is "live"
 whenever this file is reachable in a git repo your users can access. There is no
@@ -9,9 +13,9 @@ separate publish step with Anthropic.
 ## How users consume it
 
 ```
-/plugin marketplace add exmergo/exmergo-skills      # add the catalog once
-/plugin install <skill>@exmergo-skills              # install any listed skill
-/plugin marketplace update exmergo-skills           # pull catalog + skill updates
+/plugin marketplace add exmergo/exmergo-agent-plugins   # add the catalog once (repo path)
+/plugin install <skill>@exmergo                     # install any listed skill
+/plugin marketplace update exmergo                  # pull catalog + skill updates
 ```
 
 ## Naming convention
@@ -20,7 +24,7 @@ Skill repositories are named with a `skill-` prefix (for example
 `exmergo/skill-no-em-dashes`). The prefix groups skills together in the GitHub org,
 separate from open-research experiments and other tools. The prefix is only the repo
 name; the plugin's own `name` (set in its `plugin.json`) is the clean identifier users
-type, so `exmergo/skill-no-em-dashes` installs as `no-em-dashes@exmergo-skills`.
+type, so `exmergo/skill-no-em-dashes` installs as `no-em-dashes@exmergo`.
 
 ## Adding a skill to the catalog
 
@@ -80,4 +84,4 @@ The catalog works privately for the team, then opens up with no repackaging.
   skill repo, and if you pin versions here, update its `ref` in `marketplace.json`.
 - **The catalog changed** (added or removed a skill): commit and push this repo.
 
-Either way, users run `/plugin marketplace update exmergo-skills` to pick it up.
+Either way, users run `/plugin marketplace update exmergo` to pick it up.
