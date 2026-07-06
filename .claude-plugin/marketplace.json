@@ -6,9 +6,17 @@
     "url": "https://www.exmergo.com"
   },
   "metadata": {
-    "description": "Open skills for Claude Code from Exmergo, the team building AI agents for data analytics. Part of our open research at exmergo.com/open-research."
+    "description": "Open skills for Claude Code from Exmergo, the team building AI agents for data analytics."
   },
   "plugins": [
+    {
+      "name": "dex",
+      "source": {
+        "source": "github",
+        "repo": "exmergo/dex"
+      },
+      "description": "Analytics engineering for Claude Code and any agent: data warehouse exploration, data transformation, and semantic model maintenance on dbt."
+    },
     {
       "name": "no-em-dashes",
       "source": {
