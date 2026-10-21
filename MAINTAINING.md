@@ -40,7 +40,8 @@ type, so `exmergo/skill-no-em-dashes` installs as `no-em-dashes@exmergo`.
    }
    ```
 
-3. Add a row to the "Skills in this catalog" table in `README.md`.
+3. Add a row to the "What's in the catalog" table in `README.md`, with a short section
+   for the plugin below it.
 4. Validate, commit, and push (see below).
 
 ## Pinning versions

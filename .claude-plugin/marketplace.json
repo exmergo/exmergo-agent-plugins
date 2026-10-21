@@ -15,7 +15,7 @@
         "source": "github",
         "repo": "exmergo/dex"
       },
-      "description": "Analytics engineering for Claude Code and any agent: data warehouse exploration, data transformation, and semantic model maintenance on dbt."
+      "description": "Analytics engineering for Claude Code and any agent: data warehouse exploration, dbt transformation and semantic modeling, and schema-drift maintenance on dbt."
     },
     {
       "name": "no-em-dashes",
