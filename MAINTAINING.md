@@ -44,6 +44,11 @@ type, so `exmergo/skill-no-em-dashes` installs as `no-em-dashes@exmergo`.
    for the plugin below it.
 4. Validate, commit, and push (see below).
 
+dex is the one exception: its repository is a monorepo, so its entry uses a
+`git-subdir` source pointing at the `claude/` folder, the plugin folder that dex's
+release script regenerates at every release. Users get released content only, and
+the skills install the engine version they pin from PyPI.
+
 ## Pinning versions
 
 By default a `github` source tracks the skill repo's default branch, so users get the
